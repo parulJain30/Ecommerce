@@ -1,0 +1,24 @@
+<form id="add" action="addService.htm">
+        <div>
+		   <select name="cars" class="form-control" ng-model="actionText" style="height: 35px; width: 200px;" >
+		        <option value="" disabled selected>Select Your City</option>
+				<option value="Car Wash">Mysore</option>
+				<option value="Wheel Allingment">Bangalore</option>
+				<option value="Body Wash">mangalore</option>
+				<option value="Summer Package">Summer Package</option>
+				<option value="Winter Package">Winter Package</option>
+				<option value="Monsoon Package">Monsoon Package</option>
+				<option value="Paint">Paint</option>	
+			</select>
+				<input type="number" name="Price" ng-model="price" style="height: 35px;" placeholder="Price"/>
+            
+			</div>
+			<div>
+            <span>
+                <button 
+                        ng-click="addNewItem(actionText,price)" style="height:30px; width:120px" class="btn btn-skin pull-center" type="submit">
+                   Search
+                </button>
+            </span>
+        </div>
+        </form>
